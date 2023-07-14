@@ -1,0 +1,63 @@
+.search_hotel {
+  height: 346px;
+  grid-area: 1 / 1 / 2 / 2;
+  padding: 29px;
+  background-color: #fff;
+  font-style: inherit;
+  .form_search {
+    & > * {
+      padding-bottom: 12px;
+    }
+    display: flex;
+    flex-direction: column;
+    .header_input {
+      display: flex;
+      flex-direction: column;
+      font-size: 15px;
+      font-weight: 600;
+      color: #5f5f5f;
+      .input {
+        height: 50px;
+        font-size: 15px;
+        color: #5f5f5f;
+        border-radius: 4px;
+        border: 1px solid #c9cacc;
+        outline: none;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 6px;
+        &:hover {
+          box-shadow: 0px -1px 13px -2px rgba(34, 60, 80, 0.2);
+        }
+        &:focus {
+          box-shadow: 0px -1px 13px 2px rgba(34, 60, 80, 0.2);
+        }
+      }
+    }
+    .search_button {
+      width: 100%;
+      height: 50px;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+      font-size: 15px;
+      color: #fff;
+      background: linear-gradient(104.34deg, #41522e -15.34%, #be8022 145.95%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 21px;
+      padding-top: 10px;
+      cursor: pointer;
+      transition: 0.14s ease-in-out;
+      &:hover {
+        box-shadow: 0px -1px 13px -2px rgba(34, 60, 80, 0.2);
+      }
+      &:active {
+        box-shadow: none;
+        transform: scale(0.98);
+        font-size: 14.7px;
+      }
+    }
+  }
+}

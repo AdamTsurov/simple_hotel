@@ -1,0 +1,53 @@
+.favorite_hotels {
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: #fff;
+  padding: 29px;
+  height: 410px;
+  .header_favorite {
+    color: #424242;
+    font-size: 24px;
+    line-height: 5px;
+    margin-bottom: 32px;
+  }
+  .sort_favorite_hotels {
+    display: flex;
+    gap: 8px;
+    .hotels_sort {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      padding: 0px 8px;
+      border-radius: 4px;
+      border: 1.9px solid #e5e5e5;
+      color: #99a0a3;
+      & p {
+        line-height: 0;
+        padding-right: 5px;
+        user-select: none;
+      }
+    }
+    .active_sort {
+      border: 1.9px solid #41522e;
+      color: #41522e;
+    }
+  }
+
+  .scrolling_hotels {
+    width: 350px;
+    height: 78%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: nowrap;
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+    &::-webkit-scrollbar-track {
+      border-radius: 2px;
+      background: #e7e7e7;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #41522e;
+      border-radius: 2px;
+    }
+  }
+}

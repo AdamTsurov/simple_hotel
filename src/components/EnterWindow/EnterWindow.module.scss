@@ -1,0 +1,28 @@
+@import url('https://fonts.cdnfonts.com/css/roboto');
+.enter_window {
+  width: 350px;
+  height: 300px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 44px 34px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 4px 33px 0px rgba(0, 0, 0, 0.04);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .header {
+    text-align: center;
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: 700;
+    color: #424242;
+    line-height: 0;
+    margin: 0 0 32px 0;
+    .authorization {
+    }
+  }
+}

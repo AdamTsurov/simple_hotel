@@ -1,0 +1,53 @@
+.sliderContainer {
+  margin: 28px 0;
+  position: relative;
+  width: 100%; /* Задайте желаемую ширину слайдера */
+  height: 180px; /* Задайте желаемую высоту слайдера */
+  overflow: hidden;
+}
+
+.slider {
+  display: inline-flex;
+  width: max-content; /* Задайте желаемую ширину слайдера */
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  gap: 2%;
+}
+
+.slide {
+  // flex: 0 0 200px; /* Задайте ширину каждого слайда */
+  width: 230px;
+  height: 180px; /* Задайте высоту каждого слайда */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px; /* Добавляем border-radius к каждому слайду */
+}
+
+.prevButton {
+  position: absolute;
+  top: 40%;
+  background-color: transparent;
+  border: none;
+  color: rgba(182, 182, 182, 0.673);
+  font-size: 25px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.nextButton {
+  position: absolute;
+  top: 40%;
+  right: 0%;
+  background-color: transparent;
+  border: none;
+  color: rgba(182, 182, 182, 0.673);
+  font-size: 25px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.sliderContainer:hover .prevButton,
+.sliderContainer:hover .nextButton {
+  opacity: 1;
+}

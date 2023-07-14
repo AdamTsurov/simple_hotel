@@ -1,0 +1,75 @@
+.favorite_hotel {
+  width: 96%;
+  height: 33%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(135, 135, 135, 0.2);
+  &:hover {
+    background-color: #f7f7f7;
+  }
+  .basic_information {
+    width: 100%;
+    color: #878787;
+    .basic_information_block1 {
+      display: flex;
+      justify-content: space-between;
+      .hotel_name {
+        width: 270px;
+        overflow: hidden;
+        .text_name {
+          font-size: 20px;
+          margin: 0;
+          white-space: nowrap;
+        }
+        .scroll_text_name {
+          padding-left: 10px;
+          animation: scroll 8s linear infinite;
+          animation-delay: 3s;
+        }
+        @keyframes scroll {
+          0% {
+            transform: translateX(0%);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+      }
+      .favorite_image {
+        width: 21px;
+        height: 18px;
+        cursor: pointer;
+      }
+    }
+    .basic_information_block2 {
+      line-height: 35px;
+      display: flex;
+      width: 60%;
+      justify-content: space-between;
+      .date_arrival {
+        margin: 0;
+      }
+      .count_day {
+        margin: 0;
+        word-spacing: 7px;
+      }
+    }
+    .basic_information_block3 {
+      display: flex;
+      justify-content: space-between;
+      .price_hotel {
+        margin: 0;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        color: #878787;
+        .price_text {
+          color: #424242;
+          font-weight: 400;
+          font-size: 17px;
+          padding-left: 15px;
+        }
+      }
+    }
+  }
+}

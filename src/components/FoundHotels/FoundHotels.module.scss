@@ -1,0 +1,74 @@
+@import url('https://fonts.cdnfonts.com/css/roboto');
+.found_hotels {
+  grid-area: 1 / 2 / 3 / 3;
+  background-color: #fff;
+  padding: 43px 28px 43px 28px;
+  font-family: Roboto;
+  min-width: 600px;
+  height: 806px;
+  .hotel_info {
+    color: #424242;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    svg {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .date_select {
+      font-size: 24px;
+      color: #41522e;
+    }
+  }
+  .favorite_hotels_count {
+    color: #424242;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  .scrolling_hotels {
+    height: 63%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: nowrap;
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+    &::-webkit-scrollbar-track {
+      border-radius: 2px;
+      background: #e7e7e7;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #41522e;
+      border-radius: 2px;
+    }
+    .loading {
+      display: flex;
+      justify-content: center;
+      .loading_circle {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+      }
+      .loading_circle:after {
+        content: ' ';
+        display: block;
+        width: 64px;
+        height: 64px;
+        margin: 8px;
+        border-radius: 50%;
+        border: 6px solid gray;
+        border-color: gray   transparent #fff transparent;
+        animation: lds-dual-ring 1.2s linear infinite;
+      }
+      @keyframes lds-dual-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+}
